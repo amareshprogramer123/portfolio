@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amaresh Mohapatra — AI/ML Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+
+  <!-- ───── NAVBAR ───── -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <span class="brand-bracket">&lt;</span>AM<span class="brand-bracket">/&gt;</span>
+      </a>
+      <div class="d-flex align-items-center gap-3 ms-auto">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="toggler-bar"></span>
+          <span class="toggler-bar"></span>
+          <span class="toggler-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ───── HERO ───── -->
+  <section id="home" class="hero-section">
+    <canvas id="neuralCanvas"></canvas>
+    <div class="hero-content container">
+      <div class="row align-items-center min-vh-100">
+        <div class="col-lg-7 hero-text">
+          <p class="hero-eyebrow"><span class="eyebrow-dot"></span>Available for opportunities</p>
+          <h1 class="hero-name">Amaresh<br><span class="name-accent">Mohapatra</span></h1>
+          <p class="hero-title">
+            <span class="typed-wrap"><span id="typedText"></span><span class="cursor">|</span></span>
+          </p>
+          <p class="hero-bio">Final-year B.Tech CSE student building intelligent systems at the intersection of AI, data, and real-world engineering.</p>
+          <div class="hero-actions d-flex flex-wrap gap-3 mt-4">
+            <a href="#contact" class="btn btn-primary-custom">Let's Connect <i class="fa-solid fa-arrow-right ms-2"></i></a>
+            <a href="#" class="btn btn-outline-custom" id="downloadResume"><i class="fa-solid fa-download me-2"></i>Download CV</a>
+          </div>
+          <div class="hero-socials mt-4 d-flex gap-3">
+            <a href="https://github.com" target="_blank" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:moahapatraamaresh141@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-5 d-flex justify-content-center mt-5 mt-lg-0">
+          <div class="profile-card">
+            <div class="profile-ring"></div>
+            <div class="profile-avatar">
+              <div class="avatar-initials">AM</div>
+            </div>
+            <div class="profile-badge">
+              <i class="fa-solid fa-brain me-1"></i> AI / ML
+            </div>
+            <div class="profile-stats">
+              <div class="stat-item">
+                <span class="stat-num">5+</span>
+                <span class="stat-label">Projects</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <span class="stat-num">10+</span>
+                <span class="stat-label">Skills</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <span class="stat-num">4</span>
+                <span class="stat-label">Years Study</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ───── ABOUT ───── -->
+  <section id="about" class="section-pad">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Get to know me</p>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <div class="about-card reveal">
+            <div class="about-code-block">
+              <div class="code-dots"><span></span><span></span><span></span></div>
+              <pre class="code-content"><code><span class="c-keyword">const</span> <span class="c-var">amaresh</span> = {
+  <span class="c-key">role</span>: <span class="c-str">"CSE Student"</span>,
+  <span class="c-key">focus</span>: [<span class="c-str">"AI"</span>, <span class="c-str">"ML"</span>, <span class="c-str">"Data"</span>],
+  <span class="c-key">language</span>: <span class="c-str">"Python"</span>,
+  <span class="c-key">status</span>: <span class="c-str">"Seeking Opportunities"</span>,
+  <span class="c-key">openTo</span>: <span class="c-bool">true</span>
+};</code></pre>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 reveal">
+          <p class="about-text">I am a final-year B.Tech Computer Science Engineering student passionate about Artificial Intelligence, Machine Learning, Data Analytics, Python Development, and problem-solving.</p>
+          <p class="about-text mt-3">I enjoy building real-world projects using Python, Machine Learning, Django, Data Analysis tools, and IoT technologies. I am continuously learning new technologies and looking for opportunities to apply my skills in software development, AI/ML, and data-driven solutions.</p>
+          <div class="about-tags mt-4">
+            <span class="tag">🤖 AI/ML</span>
+            <span class="tag">📊 Data Analytics</span>
+            <span class="tag">🐍 Python</span>
+            <span class="tag">🌿 IoT</span>
+            <span class="tag">🌐 Web Dev</span>
+          </div>
+          <div class="about-contact-row mt-4 d-flex flex-wrap gap-3">
+            <a href="mailto:moahapatraamaresh141@gmail.com" class="contact-pill"><i class="fa-solid fa-envelope me-2"></i>moahapatraamaresh141@gmail.com</a>
+            <a href="tel:+918114767149" class="contact-pill"><i class="fa-solid fa-phone me-2"></i>+91 8114767149</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── SKILLS ───── -->
+  <section id="skills" class="section-pad section-alt">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">What I work with</p>
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="row g-4">
+        <!-- Category: AI/ML & Data -->
+        <div class="col-lg-6">
+          <div class="skills-group reveal">
+            <h4 class="skills-group-title"><i class="fa-solid fa-brain me-2"></i>AI / ML & Data</h4>
+            <div class="skill-item">
+              <div class="skill-label-row"><span>Machine Learning</span><span>90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label-row"><span>Artificial Intelligence</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label-row"><span>Data Analytics</span><span>88%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label-row"><span>Scikit-Learn</span><span>82%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+            </div>
+          </div>
+        </div>
+        <!-- Category: Python & Libraries -->
+        <div class="col-lg-6">
+          <div class="skills-group reveal">
+            <h4 class="skills-group-title"><i class="fa-brands fa-python me-2"></i>Python & Libraries</h4>
+            <div class="skill-item">
+              <div class="skill-label-row"><span>Python</span><span>92%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label-row"><span>NumPy & Pandas</span><span>88%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label-row"><span>Matplotlib</span><span>80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label-row"><span>Django</span><span>75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+          </div>
+        </div>
+        <!-- Category: Web & Tools -->
+        <div class="col-lg-6">
+          <div class="skills-group reveal">
+            <h4 class="skills-group-title"><i class="fa-solid fa-code me-2"></i>Web & Tools</h4>
+            <div class="skill-item">
+              <div class="skill-label-row"><span>HTML / CSS</span><span>80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label-row"><span>SQL</span><span>78%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label-row"><span>Git & GitHub</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label-row"><span>ESP32 & IoT</span><span>72%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+            </div>
+          </div>
+        </div>
+        <!-- Skill Chips -->
+        <div class="col-lg-6 d-flex align-items-center">
+          <div class="skill-chips-wrap reveal w-100">
+            <h4 class="skills-group-title"><i class="fa-solid fa-layer-group me-2"></i>Tech Stack</h4>
+            <div class="skill-chips">
+              <span class="chip">Python</span><span class="chip">ML</span><span class="chip">AI</span>
+              <span class="chip">NumPy</span><span class="chip">Pandas</span><span class="chip">Matplotlib</span>
+              <span class="chip">Scikit-Learn</span><span class="chip">Django</span><span class="chip">SQL</span>
+              <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">Git</span>
+              <span class="chip">GitHub</span><span class="chip">ESP32</span><span class="chip">IoT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── EDUCATION ───── -->
+  <section id="education" class="section-pad">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Academic background</p>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="edu-timeline">
+
+        <div class="edu-item reveal">
+          <div class="edu-marker"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="edu-card">
+            <span class="edu-badge">Current</span>
+            <h4 class="edu-degree">B.Tech in Computer Science Engineering</h4>
+            <p class="edu-inst">Balasore College of Engineering and Technology</p>
+            <p class="edu-univ"><i class="fa-solid fa-university me-1"></i>Biju Patnaik University of Technology (BPUT), Odisha</p>
+            <p class="edu-desc">Specializing in AI, Machine Learning, Data Analytics, and Full-Stack Python Development. Active in project-based learning with real-world applications.</p>
+          </div>
+        </div>
+
+        <div class="edu-item reveal">
+          <div class="edu-marker"><i class="fa-solid fa-school"></i></div>
+          <div class="edu-card">
+            <span class="edu-badge edu-badge-done">Completed</span>
+            <h4 class="edu-degree">12th Standard (Higher Secondary)</h4>
+            <p class="edu-inst">Babapanchalingeswar Higher Secondary School</p>
+            <p class="edu-desc">Science stream with Mathematics, Physics, and Chemistry.</p>
+          </div>
+        </div>
+
+        <div class="edu-item reveal">
+          <div class="edu-marker"><i class="fa-solid fa-book"></i></div>
+          <div class="edu-card">
+            <span class="edu-badge edu-badge-done">Completed</span>
+            <h4 class="edu-degree">10th Standard (Matriculation)</h4>
+            <p class="edu-inst">K.K. Bidyapitha</p>
+            <p class="edu-desc">Strong foundation in science and mathematics.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── PROJECTS ───── -->
+  <section id="projects" class="section-pad section-alt">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Things I've built</p>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="row g-4">
+
+        <div class="col-md-6 col-xl-4">
+          <div class="project-card reveal">
+            <div class="project-glow"></div>
+            <div class="project-top">
+              <div class="project-icon-wrap"><i class="fa-solid fa-chart-line"></i></div>
+              <div class="project-links">
+                <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <h4 class="project-title">Student Performance Prediction</h4>
+            <p class="project-desc">ML model that predicts academic performance based on study habits, attendance, and socio-economic factors using regression and classification algorithms.</p>
+            <div class="project-tags">
+              <span>Python</span><span>Scikit-Learn</span><span>Pandas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          <div class="project-card reveal">
+            <div class="project-glow"></div>
+            <div class="project-top">
+              <div class="project-icon-wrap"><i class="fa-solid fa-heart-pulse"></i></div>
+              <div class="project-links">
+                <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <h4 class="project-title">Diabetes Prediction System</h4>
+            <p class="project-desc">Classification system that predicts diabetes risk using patient health metrics with high accuracy, leveraging feature engineering and ensemble methods.</p>
+            <div class="project-tags">
+              <span>Python</span><span>ML</span><span>NumPy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          <div class="project-card reveal">
+            <div class="project-glow"></div>
+            <div class="project-top">
+              <div class="project-icon-wrap"><i class="fa-solid fa-users-gear"></i></div>
+              <div class="project-links">
+                <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <h4 class="project-title">Employee Management System</h4>
+            <p class="project-desc">Full-featured web application built with Django for managing employee records, departments, payroll, and performance tracking with a responsive UI.</p>
+            <div class="project-tags">
+              <span>Django</span><span>Python</span><span>SQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          <div class="project-card reveal">
+            <div class="project-glow"></div>
+            <div class="project-top">
+              <div class="project-icon-wrap"><i class="fa-solid fa-seedling"></i></div>
+              <div class="project-links">
+                <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <h4 class="project-title">Plant Health Monitoring System</h4>
+            <p class="project-desc">IoT system using ESP32 and sensors to monitor soil moisture, temperature, and humidity in real-time, with alerts for plant health anomalies.</p>
+            <div class="project-tags">
+              <span>ESP32</span><span>IoT</span><span>Python</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          <div class="project-card reveal">
+            <div class="project-glow"></div>
+            <div class="project-top">
+              <div class="project-icon-wrap"><i class="fa-solid fa-address-card"></i></div>
+              <div class="project-links">
+                <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <h4 class="project-title">Breast cancer prediction</h4>
+            <p class="project-desc">Classification system that predicts Breast cancer risk using patient health metrics with high accuracy, leveraging feature engineering and ensemble methods.</p>
+            <div class="project-tags">
+              <span>python</span><span>SVM</span><span>numpy</span><span>pandas</span>
+            </div>
+          </div>
+        </div>
+                <div class="col-md-6 col-xl-4">
+          <div class="project-card reveal">
+            <div class="project-glow"></div>
+            <div class="project-top">
+              <div class="project-icon-wrap"><i class="fa-solid fa-address-card"></i></div>
+              <div class="project-links">
+                <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <h4 class="project-title">Personal Portfolio Website</h4>
+            <p class="project-desc">A modern, responsive portfolio website showcasing projects, skills, and experience with dark/light mode, animations, and professional design.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <!-- CTA card -->
+        <div class="col-md-6 col-xl-4">
+          <div class="project-card project-cta-card reveal">
+            <i class="fa-solid fa-rocket fa-2x mb-3"></i>
+            <h4>More coming soon</h4>
+            <p>Actively building new projects in AI/ML and data engineering.</p>
+            <a href="https://github.com" target="_blank" class="btn btn-outline-custom btn-sm mt-2">View GitHub <i class="fa-brands fa-github ms-1"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── EXPERIENCE ───── -->
+  <section id="experience" class="section-pad">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Work history</p>
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="fresher-card reveal">
+        <div class="fresher-icon"><i class="fa-solid fa-user-astronaut"></i></div>
+        <div class="fresher-content">
+          <h4>Fresher — Ready to Launch</h4>
+          <p>I am a fresher with strong academic grounding and hands-on project experience in AI/ML, Data Analytics, and Python Development. I am eager to contribute, learn fast, and grow within a professional team environment.</p>
+          <div class="fresher-interests d-flex flex-wrap gap-2 mt-3">
+            <span class="tag">🤖 AI / ML Engineering</span>
+            <span class="tag">📊 Data Analytics</span>
+            <span class="tag">🐍 Python Development</span>
+            <span class="tag">🌐 Backend (Django)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── ACHIEVEMENTS ───── -->
+  <section id="achievements" class="section-pad section-alt">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Milestones</p>
+        <h2 class="section-title">Achievements</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+          <div class="achievement-card reveal">
+            <div class="ach-icon"><i class="fa-solid fa-brain"></i></div>
+            <h5>Machine Learning Projects</h5>
+            <p>Designed and deployed multiple end-to-end ML solutions including prediction and classification systems.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="achievement-card reveal">
+            <div class="ach-icon"><i class="fa-brands fa-python"></i></div>
+            <h5>Python Development</h5>
+            <p>Built production-quality Python applications ranging from data pipelines to full-stack Django web apps.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="achievement-card reveal">
+            <div class="ach-icon"><i class="fa-solid fa-microchip"></i></div>
+            <h5>IoT Plant Monitor</h5>
+            <p>Designed an ESP32-based real-time plant health monitoring system integrating sensors and cloud alerts.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="achievement-card reveal">
+            <div class="ach-icon"><i class="fa-solid fa-chart-bar"></i></div>
+            <h5>Active Data Learner</h5>
+            <p>Continuously advancing skills in Data Analytics and AI through coursework, projects, and self-study.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── CONTACT ───── -->
+  <section id="contact" class="section-pad">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Reach out</p>
+        <h2 class="section-title">Contact Me</h2>
+      </div>
+      <div class="row g-5 align-items-start">
+        <div class="col-lg-5">
+          <div class="contact-info reveal">
+            <p class="contact-intro">Whether you have an opportunity, a collaboration idea, or just want to say hello — I'm open to hearing from you.</p>
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <p class="detail-label">Email</p>
+                <a href="mailto:moahapatraamaresh141@gmail.com" class="detail-value">moahapatraamaresh141@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <p class="detail-label">Phone</p>
+                <a href="tel:+918114767149" class="detail-value">+91 8114767149</a>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <p class="detail-label">Location</p>
+                <p class="detail-value">Odisha, India</p>
+              </div>
+            </div>
+            <div class="d-flex gap-3 mt-4">
+              <a href="https://github.com" target="_blank" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="mailto:moahapatraamaresh141@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="contact-form-card reveal">
+            <div class="form-group mb-3">
+              <label class="form-label-custom">Your Name</label>
+              <input type="text" class="form-control-custom" placeholder="John Doe" id="contactName" />
+            </div>
+            <div class="form-group mb-3">
+              <label class="form-label-custom">Email Address</label>
+              <input type="email" class="form-control-custom" placeholder="john@example.com" id="contactEmail" />
+            </div>
+            <div class="form-group mb-3">
+              <label class="form-label-custom">Subject</label>
+              <input type="text" class="form-control-custom" placeholder="Collaboration / Opportunity / Hello" id="contactSubject" />
+            </div>
+            <div class="form-group mb-4">
+              <label class="form-label-custom">Message</label>
+              <textarea class="form-control-custom" rows="5" placeholder="Write your message here..." id="contactMessage"></textarea>
+            </div>
+            <button class="btn btn-primary-custom w-100" id="sendMessage">
+              Send Message <i class="fa-solid fa-paper-plane ms-2"></i>
+            </button>
+            <p class="form-note mt-2 text-center" id="formNote"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── FOOTER ───── -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+        <a class="navbar-brand" href="#home">
+          <span class="brand-bracket">&lt;</span>AM<span class="brand-bracket">/&gt;</span>
+        </a>
+        <p class="footer-tagline mb-0">Built with ❤️ by Amaresh Mohapatra</p>
+        <div class="d-flex gap-3">
+          <a href="https://github.com" target="_blank" class="social-icon social-icon-sm" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank" class="social-icon social-icon-sm" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:moahapatraamaresh141@gmail.com" class="social-icon social-icon-sm" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom text-center mt-3">
+        <p class="mb-0">© <span id="footerYear"></span> Amaresh Mohapatra. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
